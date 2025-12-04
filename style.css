@@ -14,7 +14,11 @@ ul {
     overflow: hidden;
     background-color: white;
     display: flex;
-    justify-content: left;
+    justify-content: right;
+}
+.logo{
+    display: flex;
+    justify-content: left; 
 }
 
 ul li {
@@ -92,4 +96,29 @@ section{
 
 img{
     border-radius: 8px;
+}
+
+.container2 {
+    display: flex;
+    width: 100%;
+    justify-content: left;
+    flex-wrap: wrap
+
+}
+.flex-item2 {
+    padding: 2%;
+    flex-grow: 1;
+    flex-basis: 15%;
+    display: flex;
+    flex-direction: column;
+}   
+
+.flex-img2 img {
+    object-fit: cover;
+    justify-content: left;
+    width: 300px;
+    height: 300px
+}                           
+.flex-info2 {
+    justify-content: left;
 }
