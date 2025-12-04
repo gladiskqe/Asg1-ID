@@ -76,9 +76,14 @@ ul li a:hover {
 }
 
 .flex-img img {
-    max-width: 100%;
+    width: 450px;
+    height: 600px;
 }
 
+.flex-img2 img {
+    width: 650px;
+    height: 400px;
+}
 .flex-info {
     margin-top: auto;
 }
@@ -153,6 +158,30 @@ h1 {
     border: 10px solid #000;
 }
 
+.merchandise-info {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+#purchase {
+    background-color: #000000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;
+    height:40px;
+}
+
+#purchase a {
+    color: white;
+    text-decoration: none;
+    align-items: center;
+}
+
 #booking {
     background-color: #800000;
     color: white;
@@ -199,6 +228,11 @@ h1 {
     font-weight: bold;
 }
 
+.concerts-dates-image img {
+    border-radius: 10px;
+    object-fit: cover;
+    align-content: center;
+}
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
@@ -292,4 +326,18 @@ input[type=submit]:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
 }
