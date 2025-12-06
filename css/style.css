@@ -43,6 +43,7 @@ ul li a:hover {
     display: flex;
     justify-content: center;
     position: relative;
+    padding: 40px;
 }
 
 .container {
@@ -88,6 +89,51 @@ ul li a:hover {
     margin-top: auto;
 }
 
+.socials-section {
+    display: flex;
+    gap: 120px;
+    padding: 60px;
+    font-family: Arial, sans-serif;
+}
+
+.left-block h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.icons img {
+    width: 28px;
+    margin-right: 25px;
+    opacity: 0.7;
+}
+
+.right-block {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header-row, .data-row {
+    display: grid;
+    grid-template-columns: 180px 200px 200px 200px;
+    align-items: start;
+}
+
+.header-row .col {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.title {
+    font-weight: bold;
+}
+
+.col {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
 @media (max-width: 920px) {
     .flex-item {
         flex-basis: 20%;
@@ -111,23 +157,23 @@ img {
 
 .member {
     display: flex;
-    align-items: flex-start;
-    gap: 30px;
-    margin: 40px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 .member-img img {
-    width: 230px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
     width: 300px;
     height: 300px;
+    border-radius: 10px;
+
 }
 
 .member-info {
+    margin:5px 0;
     font-size: 18px;
-    line-height: 1.6;
 }
 
 hr {
@@ -143,9 +189,11 @@ h1 {
 
 .merchandise {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     gap: 30px;
     margin: 40px 0;
+    max-width: 700px;
 }
 
 .merchandise-img img {
@@ -161,6 +209,7 @@ h1 {
 .merchandise-info {
     font-size: 18px;
     line-height: 1.6;
+    margin: 0 20px;
 }
 
 #purchase {
@@ -183,6 +232,7 @@ h1 {
 }
 
 #booking {
+    display: flex;
     background-color: #800000;
     color: white;
     padding: 10px 20px;
@@ -192,6 +242,9 @@ h1 {
     cursor: pointer;
     width: 100%;
     font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #booking a {
@@ -232,6 +285,7 @@ h1 {
     border-radius: 10px;
     object-fit: cover;
     align-content: center;
+    justify-content: center;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -340,4 +394,14 @@ input[type=submit]:hover {
   background-color: rgba(0,0,0,0.5); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+}
+
+#text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
 }
